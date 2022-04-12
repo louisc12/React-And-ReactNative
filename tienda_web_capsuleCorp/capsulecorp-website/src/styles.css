@@ -1,0 +1,163 @@
+html,
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul > li {
+  margin: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.cart-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cart-button:hover {
+  background-color: transparent;
+}
+
+.cart-button:active {
+  outline: none;
+}
+
+.cart-button:focus {
+  outline: 0;
+}
+
+main {
+  padding: 10px 5% 10% 5%;
+}
+
+main > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.product-card {
+  width: 275px;
+  height: 275px;
+  background-color: rgb(249, 249, 249);
+}
+
+.product-card > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: bold;
+  z-index: 99;
+}
+
+.product-card > div:hover {
+  color: #fff;
+}
+
+.product-card > div > div {
+  background-color: #fff;
+  width: 140px;
+}
+
+.product-card > div p {
+  padding: 0 10px 0 20px;
+  color: #000;
+}
+
+.sitemap {
+  border-top: 1px solid #ccc;
+  display: flex;
+  padding: 40px;
+}
+
+.sitemap > span > ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  list-style: none;
+}
+
+.sitemap img {
+  padding: 30px;
+}
+
+.sitemap li {
+  letter-spacing: 0.25px;
+  padding: 8px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 30px;
+  border-top: 1px solid #ccc;
+}
+
+small {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+/* Product Page Styles */
+.related-products {
+  display: flex;
+}
+
+.related-products {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5% 60px 5%;
+}
+
+h3 {
+  text-align: left;
+  padding: 20px 0 0 30px;
+}
+
+.product-button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.85em;
+  width: 200px;
+  height: 60px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.product-content-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.25em;
+}
